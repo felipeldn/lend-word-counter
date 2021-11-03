@@ -5,7 +5,7 @@ import { Input } from 'semantic-ui-react'
 // Display title - DONE 
 // Display caption - DONE
 // Display text field - DONE
-// Change state to entered text - DONE 
+// Change state to entered text
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
       <header className="App-header">
         <h1>REACT WORD COUNTER</h1>
         <p>Please enter a string in the text field below:</p>
+        <Input focus placeholder="Enter a string"/>
 
       </header>
     </div>
