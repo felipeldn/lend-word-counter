@@ -1,6 +1,6 @@
 import './App.css';
+import Main from './components/Main'
 import 'semantic-ui-css/semantic.min.css'
-import { Input } from 'semantic-ui-react'
 
 // Display title - DONE 
 // Display caption - DONE
@@ -11,10 +11,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>REACT WORD COUNTER</h1>
-        <p>Please enter a string in the text field below:</p>
-        <Input focus placeholder="Enter a string"/>
-
+      <h1>REACT WORD COUNTER</h1>    
+          <Main/>
       </header>
     </div>
   );
