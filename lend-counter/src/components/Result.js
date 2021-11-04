@@ -11,7 +11,7 @@ function Result(props) {
     
         return (
             <div id='result' className="count-result">
-                    <Image src={images} alt='loading...' size='medium' centered />
+                    <Image src={images} alt='loading...' size='large' centered />
                     <br/>
                     <p>Your string contained the following <strong>{`${count} `}</strong>valid words:</p>
                     
