@@ -53,7 +53,6 @@ export default class Main extends Component {
             }
         })
 
-        console.log(test_output)
         this.setState({stateCount: count})
         this.setState({validWords: test_output})
 
@@ -62,11 +61,6 @@ export default class Main extends Component {
 
 
     render() {
-
-        const wordCount = this.state.stateCount
-        const wordsss = this.state.value
-        console.log(wordCount)
-        console.log(wordsss)
 
         return(
             <div class="Form">
