@@ -1,6 +1,6 @@
 import React from 'react'
 import { Image } from 'semantic-ui-react'
-import images from '../images/confused-counting.gif'
+import image from '../images/confused-counting.gif'
 
 function Result(props) {
 
@@ -11,7 +11,7 @@ function Result(props) {
     
         return (
             <div id='result' className="count-result">
-                    <Image src={images} alt='loading...' size='large' centered />
+                    <Image src={image} alt='loading...' size='large' centered />
                     <br/>
                     <p>Your string contained the following <strong>{`${count} `}</strong>valid words:</p>
                     

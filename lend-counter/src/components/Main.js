@@ -3,10 +3,11 @@ import Result from'./Result.js'
 import { Button, Form } from 'semantic-ui-react'
 
 // Capture string entered by user - DONE
-// Call userString function when button is clicked - DONE
+// Call handleChange function when user types in input field - DONE
+// Call handleSubmit function when button is clicked - DONE
 // Return string count as with original function via console - DONE
 // Return count via another component by passing state to props - DONE
-// Make everything dissapear once button has been clicked - DONE
+// Make <Result/> component appear once button is clicked - DONE
 
 
 export default class Main extends Component {
