@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import Result from'./Result.js'
 import { Input, Button, Form } from 'semantic-ui-react'
 
 // Capture string entered by user - DONE
@@ -9,11 +10,13 @@ import { Input, Button, Form } from 'semantic-ui-react'
 
 export default class Main extends Component {
     
+
     constructor(props) {
         super(props)
 
         this.state = {
-            value: ''
+            value: '',
+            stateCount: 0
         }
     
         this.handleChange = this.handleChange.bind(this)
@@ -29,7 +32,7 @@ export default class Main extends Component {
 
     handleSubmit(event) {
 
-        let userString = this.state.value
+        const userString = this.state.value
 
         let sentence = userString.split(' ')
         let count = 0
@@ -50,7 +53,8 @@ export default class Main extends Component {
         })
 
         console.log(test_output)
-        console.log(count)
+        // console.log(count)
+        this.setState({stateCount: count})
 
         event.preventDefault()
     }
@@ -58,44 +62,23 @@ export default class Main extends Component {
 
     render() {
 
-        // const userSentence = this.state.userString
-
-        // console.log(userSentence)
-
-        // const filterWords = (sentence) => {
-            
-        //     let userString = sentence.split(' ')
-        //     let count = 0
-
-        //     let test_output = []
-
-        //     userString.forEach(function(word) {
-                
-        //         let hasNumber = /\d/
-        //         let hasSpecialCharacter = /[!@#$%^&*()_+{}\[\]:;'"\/\\><]/
-
-        //         if (hasNumber.test(word) || hasSpecialCharacter.test(word))
-        //             count = count
-        //         else {
-        //             test_output.push(word)
-        //             count += 1
-        //         }
-        //     })
-        //     console.log(test_output)
-        //     console.log(count)
-        // }
+        const wordCount = this.state.stateCount
+        const words = this.state.value
+        console.log(wordCount)
+        console.log(words)
 
         return(
-            <div>
+            <div class="Form">
                 <p>Please enter a string in the text field below:</p>
 
-                <Form onSubmit={this.handleSubmit}>
+                <Form onSubmit={this.handleSubmit} >
                     <Form.Field onChange={this.handleChange}>
                         <input placeholder="Enter a string"/>
                     </Form.Field>
                     <Button positive type='submit'>COUNT</Button>
                 </Form>
-
+                <br/>
+                <Result data={this.state.stateCount}/>
                 {/* <Input 
                     placeholder="Enter a string"
                     onChange={this.handleChange}
