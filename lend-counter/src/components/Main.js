@@ -1,22 +1,23 @@
 import React, {Component} from 'react'
 import Result from'./Result.js'
-import { Input, Button, Form } from 'semantic-ui-react'
+import { Button, Form } from 'semantic-ui-react'
 
 // Capture string entered by user - DONE
 // Call userString function when button is clicked - DONE
 // Return string count as with original function via console - DONE
+// Return count via another component by passing state to props - DONE
 // Make everything dissapear once button has been clicked - MAYBE VIA INNER HTML?
 
 
 export default class Main extends Component {
     
-
     constructor(props) {
         super(props)
 
         this.state = {
             value: '',
-            stateCount: 0
+            stateCount: 0,
+            validWords: ''
         }
     
         this.handleChange = this.handleChange.bind(this)
@@ -53,8 +54,8 @@ export default class Main extends Component {
         })
 
         console.log(test_output)
-        // console.log(count)
         this.setState({stateCount: count})
+        this.setState({validWords: test_output})
 
         event.preventDefault()
     }
@@ -63,9 +64,9 @@ export default class Main extends Component {
     render() {
 
         const wordCount = this.state.stateCount
-        const words = this.state.value
+        const wordsss = this.state.value
         console.log(wordCount)
-        console.log(words)
+        console.log(wordsss)
 
         return(
             <div class="Form">
@@ -78,16 +79,7 @@ export default class Main extends Component {
                     <Button positive type='submit'>COUNT</Button>
                 </Form>
                 <br/>
-                <Result data={this.state.stateCount}/>
-                {/* <Input 
-                    placeholder="Enter a string"
-                    onChange={this.handleChange}
-                /> */}
-                    {/* <Button positive onClick={console.log("It's working!")}>COUNT</Button> */}
-                
-                <br/>
-                <br/>
-                {/* <Button positive onClick={console.log("It's working!")}>COUNT</Button> */}
+                    <Result dataCount={this.state.stateCount} dataWords={this.state.validWords}/>
             </div>
         
         )
