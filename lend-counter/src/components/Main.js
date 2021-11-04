@@ -6,7 +6,7 @@ import { Button, Form } from 'semantic-ui-react'
 // Call userString function when button is clicked - DONE
 // Return string count as with original function via console - DONE
 // Return count via another component by passing state to props - DONE
-// Make everything dissapear once button has been clicked - MAYBE VIA INNER HTML?
+// Make everything dissapear once button has been clicked - DONE
 
 
 export default class Main extends Component {

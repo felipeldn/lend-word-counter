@@ -11,7 +11,7 @@ function Result(props) {
             <div id='result' className="count-result">
                     <p>Your string contained the following <strong>{`${count} `}</strong>valid words:</p>
                     <br/>
-                    <strong>{`${validWords.join(' ')} `}</strong>
+                    <strong>{`"${validWords.join(' ')} "`}</strong>
             </div>
     )}
     return (
