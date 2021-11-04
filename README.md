@@ -18,7 +18,7 @@ New version deployed on 15:45, Thursday 4th November, 2021.
 
 Deployed in order to make small frontend changes, such as different messages inside the `Result` component output depending on the number of valid words, i.e. "Your string contained one valid word" or "Your string contained 5 valid words"
 
-One more small change, the title and logo in the browser tab has been changed to match this repo being a Lendable code challenge:
+One more small change, the title and logo in the browser tab have been changed to match this repo being a Lendable code challenge:
 
 ![alt text](/logo-screenshot.png)
 
