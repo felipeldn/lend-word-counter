@@ -12,14 +12,16 @@ To run this program visit the following link:
 
 https://nervous-goldstine-7383e7.netlify.app/
 
-**Newly deployed version with small changes. Please note the old link is still active and can be used**
+**Newly deployed version with small changes. Please note the old link is still active and can still be used.**
 
 New version deployed on 15:45, Thursday 4th November, 2021. 
 
-Deployed in order to make small frontend changes, such as different messages inside the `Result` component output depending on the number of valid words, i.e. "Your contained one valid word" or "Your string contained 5 valid words"
+Deployed in order to make small frontend changes, such as different messages inside the `Result` component output depending on the number of valid words, i.e. "Your string contained one valid word" or "Your string contained 5 valid words"
 
 One more small change, the title and logo in the browser tab has been changed to match this repo being a Lendable code challenge:
 
 ![alt text](/logo-screenshot.png)
 
 New link: https://confident-yalow-5f062c.netlify.app/
+
+Deployed via Netlify.
