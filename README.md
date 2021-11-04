@@ -12,7 +12,7 @@ To run this program visit the following link:
 
 https://nervous-goldstine-7383e7.netlify.app/
 
-**Newly deployed version with small changes. Please note old link is still active and can be used**
+**Newly deployed version with small changes. Please note the old link is still active and can be used**
 
 New version deployed on 15:45, Thursday 4th November, 2021. 
 
