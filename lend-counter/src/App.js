@@ -5,7 +5,7 @@ import 'semantic-ui-css/semantic.min.css'
 // Display title - DONE 
 // Display caption - DONE
 // Display text field - DONE
-// Change state to entered text
+// Change state to entered text - DONE
 
 function App() {
   return (
