@@ -34,7 +34,6 @@ function Result(props) {
                 <strong>{`"${validWords.join(', ')}"`}</strong>
                 <br/>
                 <br/>
-                <p>Get your quote with <a href="https://www.lendable.co.uk/">Lendable</a> today!</p>
             </div>
         )
     }
