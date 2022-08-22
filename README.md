@@ -8,10 +8,6 @@ Example 1 = 'How many eggs are in a half-dozen, 13?', should yield a result of 7
 
 Example 2 = 'b? Dl )B 4(V! A. MK, YtG ](f 1m )CNxuNUR {PG?' should yield a result of 5.
 
-To run this program visit the following link: 
-
-https://nervous-goldstine-7383e7.netlify.app/
-
 **Newly deployed version with small changes. Please note that the old link is still active and can still be used.**
 
 New version deployed at 15:45, Thursday 4th November, 2021. 
@@ -21,7 +17,3 @@ Deployed in order to make small frontend changes, such as different messages ins
 One more small change, the title and logo in the browser tab have been changed to match this repo being a Lendable code challenge:
 
 ![alt text](/logo-screenshot.png)
-
-New link: https://confident-yalow-5f062c.netlify.app/
-
-Deployed via Netlify.
